@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif; margin: 0; background: #0b1020; color: #f0f4ff; }
+.container { max-width: 720px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 28px; margin: 0 0 16px; }
+form { display: flex; gap: 8px; margin-bottom: 16px; }
+input, button { padding: 10px 12px; border-radius: 8px; border: 1px solid #1f2a4a; background: #0f1733; color: #eef3ff; }
+input::placeholder { color: #98a4c7; }
+button { background: #3a64ff; border-color: #3a64ff; cursor: pointer; }
+button:hover { background: #2c54ee; }
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+li { display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 12px; padding: 12px; border: 1px solid #1f2a4a; border-radius: 10px; background: #0f1733; }
+.title { font-weight: 600; }
+.desc { color: #a7b3d4; font-size: 14px; }
+.right { display: flex; gap: 8px; }
+.done { text-decoration: line-through; color: #8ea0cc; }
