@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>App Starter</title>
+<link rel="stylesheet" href="/styles.css" />
+<body>
+	<main>
+		<h1>Welcome</h1>
+		<p id="status">Checking health...</p>
+		<button id="ping">Ping API</button>
+	</main>
+	<script>
+	async function check(){
+		const r = await fetch('/api/health');
+		const j = await r.json();
+		document.getElementById('status').textContent = 'API: ' + j.status;
+	}
+	document.getElementById('ping').addEventListener('click', check);
+	check();
+	</script>
+</body>
+</html>
